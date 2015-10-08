@@ -145,17 +145,14 @@
             </div>
             <!-- Contact Details Column -->
             <div class="col-md-4">
-                <h3>Contact Details</h3>
-                <p>
-                    3481 Melrose Place<br>Beverly Hills, CA 90210<br>
-                </p>
-                <p><i class="fa fa-phone"></i> 
-                    <abbr title="Phone">P</abbr>: (123) 456-7890</p>
-                <p><i class="fa fa-envelope-o"></i> 
-                    <abbr title="Email">E</abbr>: <a href="mailto:name@example.com">name@example.com</a>
-                </p>
-                <p><i class="fa fa-clock-o"></i> 
-                    <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p>
+                <h3>Location Filter</h3>
+                <div id="locationFilter">
+                    <ul id="markerList"></ul>
+                    <form action="">
+                        Summer <input id="summerChx" type="checkbox" name="season" value="summer"><br>
+                        Winter <input id="winterChx" type="checkbox" name="season" value="winter"><br>
+                    </form>
+                </div>
                 <ul class="list-unstyled list-inline list-social-icons">
                     <li>
                         <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
@@ -240,7 +237,7 @@
     <script src="js/contact_me.js"></script>
 
     <!-- JS for Google Maps -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD80_YxdlsnPmgr8Y3LGjarxY76NSPjGH4&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD80_YxdlsnPmgr8Y3LGjarxY76NSPjGH4&callback=initMap&initFilters"
         async defer></script>
     <script src="js/map.js"></script>
 
