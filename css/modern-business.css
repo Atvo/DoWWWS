@@ -42,6 +42,13 @@ header.carousel .fill {
     background-size: cover;
 }
 
+/* Contact Page Styles */
+#gMap {
+    width: 100;
+    height: 400px;
+    z: 4;
+}
+
 /* 404 Page Styles */
 
 .error-404 {
